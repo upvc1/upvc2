@@ -1,0 +1,119 @@
+body,
+html {
+  font-family: "Cairo", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p,
+li {
+  font-weight: 400;
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 20px; /* Adjust the distance from the right */
+  background-color: #25d366; /* WhatsApp green */
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  z-index: 10000;
+}
+.whatsapp-icon i {
+  color: white;
+  font-size: 24px;
+}
+
+.whatsapp-icon:hover {
+  background-color: #128c7e; /* Darker green on hover */
+}
+
+header,
+footer {
+  background-color: #0086c5;
+}
+header img {
+  width: 80px;
+}
+.navbar {
+  background-color: #005b7f !important;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+.custom-carousel-img {
+  height: 450px; /* Adjust this value to control the height */
+  object-fit: cover; /* Ensures the image scales nicely within the height */
+}
+.upvc {
+  height: 370px;
+  position: relative;
+}
+
+.upvc img {
+  filter: blur(2px);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-overlay h2 {
+  color: white;
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: add background to enhance visibility */
+  padding: 10px;
+  border-radius: 5px;
+}
+.feature {
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15); /* Box shadow on hover */
+}
+
+.feature:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.3); /* Harder box shadow on hover */
+}
+
+.feature li {
+  list-style: none;
+  margin-bottom: 20px;
+  background-color: #0086c5;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.feature .col-4 img {
+  height: 632px;
+}
+@media (max-width: 991px) {
+  .feature .col-4 img {
+    height: 400px;
+  }
+}
